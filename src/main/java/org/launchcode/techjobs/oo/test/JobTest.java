@@ -53,13 +53,12 @@ public class JobTest {
     public void testToStringContainsCorrectLabelsAndData() {
         Job job1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
         String testString = '\n' +
-                "ID:  4\n" +
+                "ID: 4\n" +
                 "Name: Product tester\n" +
                 "Employer: ACME\n" +
                 "Location: Desert\n" +
                 "Position Type: Quality control\n" +
-                "Core Competency: Persistence\n" +
-                '\n';
+                "Core Competency: Persistence\n";
         assertEquals(testString, job1.toString());
     }
 
@@ -67,7 +66,7 @@ public class JobTest {
     public void testToStringHandlesEmptyField() {
         Job job1 = new Job("Product tester", new Employer(""), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
         String testString = '\n' +
-                "ID:  3\n" +
+                "ID: 3\n" +
                 "Name: Product tester\n" +
                 "Employer: Data not available\n" +
                 "Location: Desert\n" +

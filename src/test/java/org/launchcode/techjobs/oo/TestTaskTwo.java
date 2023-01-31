@@ -133,6 +133,8 @@ public class TestTaskTwo extends AbstractTest {
         }
         anotherPositionTypeIdField.setAccessible(true);
         anotherPositionTypeIdField.set(anotherPositionType, positionType.getId());
+        System.out.println(positionType);
+        System.out.println(anotherPositionType);
         assertTrue(positionType.equals(anotherPositionType));
     }
 
